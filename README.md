@@ -5,6 +5,9 @@ AI App utilizing Cloudflare Workers, OpenAI and Polygon API.
 
 A Cloudflare Worker service that handles OpenAI API interactions.
 
+![Front End to Cloudflare Worker to OpenAI API then back to Cloudflare Worker and back to the Front End](https://github.com/marklreyes/AI-App/blob/main/frontend_worker_openai.png?raw=true)
+
+
 ### Setup
 
 1. Install dependencies:
