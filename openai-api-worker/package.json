@@ -12,5 +12,8 @@
 		"@cloudflare/vitest-pool-workers": "^0.6.4",
 		"vitest": "~2.1.9",
 		"wrangler": "^3.109.2"
+	},
+	"dependencies": {
+		"openai": "^4.85.3"
 	}
 }
