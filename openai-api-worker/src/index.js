@@ -27,9 +27,10 @@ export default {
 		});
 
 		try {
+			const messages = await request.json();
             const chatCompletion = await openai.chat.completions.create({
                 model: 'gpt-4',
-                messages: [{role: "user", content: "Should I trust stock predictions from Dodgy Dave?"}],
+                messages: messages,
                 temperature: 1.1,
                 presence_penalty: 0,
                 frequency_penalty: 0
