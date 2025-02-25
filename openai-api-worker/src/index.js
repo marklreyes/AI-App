@@ -27,6 +27,11 @@ export default {
 			return new Response("The OPENAI_API_KEY environment variable is missing or empty.", { status: 500, headers: corsHeaders });
 		}
 
+		// Only process POST requests
+		if (request.method !== "POST") {
+			return new Response(JSON.stringify({ error: `${request.method} method not allowed.`}), { status: 405, headers: corsHeaders });
+		}
+
 		const openai = new OpenAI({
 			apiKey: env.OPENAI_API_KEY,
 			baseURL: "https://gateway.ai.cloudflare.com/v1/bb2a42f62db10be6f4ca20c32b5d4f52/stock-predictions/openai"
