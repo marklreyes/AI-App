@@ -1,5 +1,5 @@
 # AI App
-AI App utilizing Cloudflare Workers, OpenAI and Polygon API.
+AI App utilizing Cloudflare Workers, OpenAI and Polygon API. Currently powering [Dodgy Dave's Stock Predictions AI App](https://github.com/marklreyes/stock-predictions-ai-app-main).
 
 ## OpenAI API Worker
 
